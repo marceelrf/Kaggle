@@ -106,4 +106,6 @@ train_imput %>%
 
 train_imput %>% 
   ggplot(aes(x = Stage_fear, fill = Personality)) +
-  geom_bar(position = "dodge")
+  geom_bar(position = "dodge") +
+  facet_wrap(~Drained_after_socializing)
+
